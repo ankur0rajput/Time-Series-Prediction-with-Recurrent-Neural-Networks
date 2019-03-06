@@ -91,3 +91,9 @@ plt.xlabel('Time')
 plt.ylabel('Google Stock Price')
 plt.legend()
 plt.show()
+
+#Evaluating the RNN
+import math
+from sklearn.metrics import mean_squared_error
+rmse=math.sqrt(mean_squared_error(real_stock_price,predicted_stock_price))
+avg=rmse/800
